@@ -1,5 +1,5 @@
 # applet-monitor-de-de-sistema
-Un applet para cinnamon que muestra el uso de CPU, GPU, RAM, SWAP, VRAM de forma nativa y ligera. 
+Un applet para cinnamon que muestra el uso de CPU, GPU, RAM, SWAP, VRAM de forma nativa y ligera. (Beta)
 
 Esta en fase de prueva, actualmente funciona en Intel y AMD, el estado de compatibilidad con GPU intel o Nvidia esta inconcluso, si deseas ayudar a mejorar el applet, porfavor escribe tu modelo exacto de GPU para iniciar las pruevas e intentar terminar la compatibilidad. 
 
