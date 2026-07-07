@@ -1,0 +1,589 @@
+❯ gnome-system-monitor.desktop
+zsh: command not found: gnome-system-monitor.desktop
+❯ gnome-system-monitor
+❯ rm ~/.config/cinnamon/spices/systemmonitor@dannt/systemmonitor@dannt.json
+    # Creamos la carpeta de configs antigua por si acaso
+    mkdir -p ~/.cinnamon/configs/systemmonitor@dannt
+❯ # Borramos el archivo corrupto
+rm ~/.config/cinnamon/spices/systemmonitor@dannt/systemmonitor@dannt.json
+
+# Creamos la carpeta de configs antigua por si acaso
+mkdir -p ~/.cinnamon/configs/systemmonitor@dannt
+
+# Reiniciamos Cinnamon
+cinnamon --replace & disown
+❯ cinnamon --replace & disown
+[1] 122030
+╭─ ~ ────────────────────────────────────────────────────────────── 01:27:54 AM
+╰─❯ Gjs-Message: 01:27:55.227: Profiler is disabled. Not setting up signals.
+Gjs-Message: 01:27:55.731: JS LOG: About to start Cinnamon (X11 backend)
+Gjs-Message: 01:27:55.780: JS LOG: [LookingGlass/info] Cinnamon.AppSystem.get_default() started in 0 ms
+Gjs-Message: 01:27:55.784: JS LOG: [LookingGlass/info] loading user theme: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon/cinnamon.css
+Gjs-Message: 01:27:55.805: JS LOG: [LookingGlass/info] added icon directory: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon
+Gjs-Message: 01:27:55.818: JS LOG: [LookingGlass/info] Set up Touchegg client
+Gjs-Message: 01:27:55.935: JS LOG: [LookingGlass/info] Animations: enabled (hardware rendering, enabled in settings)
+Gjs-Message: 01:27:55.976: JS LOG: [LookingGlass/info] NetworkManager agent: enabled
+Gjs-Message: 01:27:55.985: JS LOG: [LookingGlass/info] Cinnamon registered as the Polkit agent for the active session (c2)
+Gjs-Message: 01:27:55.986: JS LOG: [LookingGlass/info] SSH agent: enabled
+Gjs-Message: 01:27:55.993: JS LOG: [LookingGlass/info] loaded at Mon Jul 06 2026 01:27:55 GMT-0500 (hora estándar de Colombia)
+Gjs-Message: 01:27:55.993: JS LOG: Cinnamon started at Mon Jul 06 2026 01:27:55 GMT-0500 (hora estándar de Colombia)
+current session already has an ibus-daemon.
+Gjs-Message: 01:27:56.091: JS LOG: [LookingGlass/info] ExtensionSystem started in 1 ms
+Gjs-Message: 01:27:56.092: JS LOG: [LookingGlass/info] DeskletManager started in 2 ms
+Gjs-Message: 01:27:56.092: JS LOG: [LookingGlass/info] SearchProviderManager started in 1 ms
+Gjs-Message: 01:27:56.607: JS LOG: [LookingGlass/info] Loaded applet removable-drives@cinnamon.org in 113 ms
+Gjs-Message: 01:27:56.614: JS LOG: [LookingGlass/info] Role locked: tray
+Gjs-Message: 01:27:56.618: JS LOG: [LookingGlass/info] Loaded applet systray@cinnamon.org in 11 ms
+Gjs-Message: 01:27:56.628: JS LOG: [LookingGlass/info] Loaded applet favorites@cinnamon.org in 10 ms
+Gjs-Message: 01:27:56.675: JS LOG: [LookingGlass/info] Loaded applet notifications@cinnamon.org in 47 ms
+Gjs-Message: 01:27:56.707: JS LOG: [LookingGlass/info] Loaded applet printers@cinnamon.org in 32 ms
+Gjs-Message: 01:27:56.726: JS LOG: [LookingGlass/info] Loaded applet keyboard@cinnamon.org in 19 ms
+Gjs-Message: 01:27:56.780: JS LOG: [LookingGlass/info] Loaded applet calendar@cinnamon.org in 54 ms
+Gjs-Message: 01:27:56.792: JS LOG: [LookingGlass/info] Loaded applet cornerbar@cinnamon.org in 12 ms
+Gjs-Message: 01:27:56.807: JS LOG: [LookingGlass/info] Loaded applet xapp-status@cinnamon.org in 15 ms
+Gjs-Message: 01:27:56.854: JS LOG: [LookingGlass/info] Loaded applet temperature@fevimu in 47 ms
+Gjs-Message: 01:27:56.862: JS LOG: [LookingGlass/info] Installing settings for systemmonitor@dannt
+Gjs-Message: 01:27:56.863: JS LOG: [LookingGlass/info] Settings successfully installed for systemmonitor@dannt
+Gjs-Message: 01:27:56.899: JS LOG: [LookingGlass/info] Loaded applet systemmonitor@dannt in 44 ms
+Gjs-Message: 01:27:56.905: JS LOG: calendar@cinnamon.org: Calendar events supported.
+Gjs-Message: 01:27:56.944: JS LOG: [LookingGlass/info] Loaded applet bluetooth-battery@zamszowy in 45 ms
+Gjs-Message: 01:27:57.015: JS LOG: [LookingGlass/info] Loaded applet power@cinnamon.org in 71 ms
+Gjs-Message: 01:27:57.122: JS LOG: [LookingGlass/info] Role locked: panellauncher
+Gjs-Message: 01:27:57.122: JS LOG: [LookingGlass/info] Role locked: windowattentionhandler
+Gjs-Message: 01:27:57.137: JS LOG: [LookingGlass/info] Monitor Watch List updated: [0]
+Gjs-Message: 01:27:57.137: JS LOG: [LookingGlass/info] Loaded applet grouped-window-list@cinnamon.org in 122 ms
+Gjs-Message: 01:27:57.141: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintUpdate.py (:1.98/org/x/StatusIcon/Icon)
+Gjs-Message: 01:27:57.159: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: blueman (:1.64/org/x/StatusIcon/Icon)
+Gjs-Message: 01:27:57.168: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintreport (:1.113/org/x/StatusIcon/Icon)
+Gjs-Message: 01:27:57.172: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: process-monitor (:1.113/org/x/StatusIcon/Icon_1)
+Gjs-Message: 01:27:57.296: JS LOG: [LookingGlass/info] Loaded applet sound@cinnamon.org in 159 ms
+Gjs-Message: 01:27:57.381: JS LOG: [LookingGlass/info] Loaded applet network@cinnamon.org in 85 ms
+Gjs-Message: 01:27:57.622: JS LOG: [LookingGlass/info] Loaded applet menu@cinnamon.org in 241 ms
+Gjs-Message: 01:27:57.623: JS LOG: [LookingGlass/info] AppletManager started in 1544 ms
+Gjs-Message: 01:27:57.628: JS LOG: [LookingGlass/info] Cinnamon took 1897 ms to start
+Gjs-Message: 01:27:57.736: JS LOG: Unknown network device type, is 32
+Gjs-Message: 01:27:58.063: JS LOG: [LookingGlass/info] GPU offload supported: false
+Gjs-Message: 01:27:59.990: JS LOG: Enabling WindowAttentionHandler
+Window manager warning: META_CURRENT_TIME used to choose focus window; focus window may not be correct.
+Gjs-Message: 01:29:02.482: Profiler is disabled. Not setting up signals.
+Gjs-Message: 01:29:02.923: JS LOG: About to start Cinnamon (X11 backend)
+Gjs-Message: 01:29:02.973: JS LOG: [LookingGlass/info] Cinnamon.AppSystem.get_default() started in 0 ms
+Gjs-Message: 01:29:02.977: JS LOG: [LookingGlass/info] loading user theme: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon/cinnamon.css
+Gjs-Message: 01:29:02.997: JS LOG: [LookingGlass/info] added icon directory: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon
+Gjs-Message: 01:29:03.010: JS LOG: [LookingGlass/info] Set up Touchegg client
+Gjs-Message: 01:29:03.129: JS LOG: [LookingGlass/info] Animations: enabled (hardware rendering, enabled in settings)
+Gjs-Message: 01:29:03.166: JS LOG: [LookingGlass/info] NetworkManager agent: enabled
+Gjs-Message: 01:29:03.173: JS LOG: [LookingGlass/info] Cinnamon registered as the Polkit agent for the active session (c2)
+Gjs-Message: 01:29:03.174: JS LOG: [LookingGlass/info] SSH agent: enabled
+Gjs-Message: 01:29:03.181: JS LOG: [LookingGlass/info] loaded at Mon Jul 06 2026 01:29:03 GMT-0500 (hora estándar de Colombia)
+Gjs-Message: 01:29:03.181: JS LOG: Cinnamon started at Mon Jul 06 2026 01:29:03 GMT-0500 (hora estándar de Colombia)
+current session already has an ibus-daemon.
+Gjs-Message: 01:29:03.278: JS LOG: [LookingGlass/info] ExtensionSystem started in 1 ms
+Gjs-Message: 01:29:03.278: JS LOG: [LookingGlass/info] DeskletManager started in 1 ms
+Gjs-Message: 01:29:03.279: JS LOG: [LookingGlass/info] SearchProviderManager started in 1 ms
+Gjs-Message: 01:29:03.563: JS LOG: [LookingGlass/info] Role locked: tray
+Gjs-Message: 01:29:03.570: JS LOG: [LookingGlass/info] Loaded applet systray@cinnamon.org in 53 ms
+Gjs-Message: 01:29:03.643: JS LOG: [LookingGlass/info] Loaded applet favorites@cinnamon.org in 73 ms
+Gjs-Message: 01:29:03.650: JS LOG: [LookingGlass/info] Loaded applet removable-drives@cinnamon.org in 7 ms
+Gjs-Message: 01:29:03.682: JS LOG: [LookingGlass/info] Loaded applet notifications@cinnamon.org in 32 ms
+Gjs-Message: 01:29:03.737: JS LOG: [LookingGlass/info] Loaded applet calendar@cinnamon.org in 55 ms
+Gjs-Message: 01:29:03.765: JS LOG: [LookingGlass/info] Loaded applet printers@cinnamon.org in 28 ms
+Gjs-Message: 01:29:03.790: JS LOG: [LookingGlass/info] Loaded applet systemmonitor@dannt in 25 ms
+Gjs-Message: 01:29:03.801: JS LOG: [LookingGlass/info] Loaded applet cornerbar@cinnamon.org in 11 ms
+Gjs-Message: 01:29:03.865: JS LOG: [LookingGlass/info] Loaded applet temperature@fevimu in 63 ms
+Gjs-Message: 01:29:03.895: JS LOG: [LookingGlass/info] Loaded applet keyboard@cinnamon.org in 29 ms
+Gjs-Message: 01:29:03.918: JS LOG: [LookingGlass/info] Loaded applet xapp-status@cinnamon.org in 19 ms
+Gjs-Message: 01:29:03.935: JS LOG: [LookingGlass/info] Loaded applet bluetooth-battery@zamszowy in 17 ms
+Gjs-Message: 01:29:03.958: JS LOG: calendar@cinnamon.org: Calendar events supported.
+Gjs-Message: 01:29:04.029: JS LOG: [LookingGlass/info] Loaded applet power@cinnamon.org in 94 ms
+Gjs-Message: 01:29:04.128: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintreport (:1.113/org/x/StatusIcon/Icon)
+Gjs-Message: 01:29:04.137: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: process-monitor (:1.113/org/x/StatusIcon/Icon_1)
+Gjs-Message: 01:29:04.151: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintUpdate.py (:1.98/org/x/StatusIcon/Icon)
+Gjs-Message: 01:29:04.160: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: blueman (:1.64/org/x/StatusIcon/Icon)
+Gjs-Message: 01:29:04.184: JS LOG: [LookingGlass/info] Role locked: panellauncher
+Gjs-Message: 01:29:04.184: JS LOG: [LookingGlass/info] Role locked: windowattentionhandler
+Gjs-Message: 01:29:04.188: JS LOG: [LookingGlass/info] Monitor Watch List updated: [0]
+Gjs-Message: 01:29:04.189: JS LOG: [LookingGlass/info] Loaded applet grouped-window-list@cinnamon.org in 160 ms
+Gjs-Message: 01:29:04.273: JS LOG: [LookingGlass/info] Loaded applet sound@cinnamon.org in 84 ms
+Gjs-Message: 01:29:04.338: JS LOG: [LookingGlass/info] Loaded applet network@cinnamon.org in 64 ms
+Gjs-Message: 01:29:04.589: JS LOG: [LookingGlass/info] Loaded applet menu@cinnamon.org in 249 ms
+Gjs-Message: 01:29:04.589: JS LOG: [LookingGlass/info] AppletManager started in 1322 ms
+Gjs-Message: 01:29:04.594: JS LOG: [LookingGlass/info] Cinnamon took 1671 ms to start
+Gjs-Message: 01:29:04.697: JS LOG: Unknown network device type, is 32
+Gjs-Message: 01:29:05.009: JS LOG: [LookingGlass/info] GPU offload supported: false
+❯ 
+❯ rm ~/.config/cinnamon/spices/systemmonitor@dannt/systemmonitor@dannt.json
+    # Creamos la carpeta de configs antigua por si acaso
+    mkdir -p ~/.cinnamon/configs/systemmonitor@dannt
+❯ cinnamon --replace & disown
+[1] 122777
+╭─ ~ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 01:29:26 AM
+╭─ ~ ────────────────────────────────────────────────────────────── 01:29:26 AM
+╰─❯ Gjs-Message: 01:29:27.468: JS LOG: About to start Cinnamon (X11 backend)
+Gjs-Message: 01:29:27.518: JS LOG: [LookingGlass/info] Cinnamon.AppSystem.get_default() started in 0 ms
+Gjs-Message: 01:29:27.522: JS LOG: [LookingGlass/info] loading user theme: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon/cinnamon.css
+Gjs-Message: 01:29:27.543: JS LOG: [LookingGlass/info] added icon directory: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon
+Gjs-Message: 01:29:27.558: JS LOG: [LookingGlass/info] Set up Touchegg client
+Gjs-Message: 01:29:27.677: JS LOG: [LookingGlass/info] Animations: enabled (hardware rendering, enabled in settings)
+Gjs-Message: 01:29:27.719: JS LOG: [LookingGlass/info] NetworkManager agent: enabled
+Gjs-Message: 01:29:27.728: JS LOG: [LookingGlass/info] Cinnamon registered as the Polkit agent for the active session (c2)
+Gjs-Message: 01:29:27.729: JS LOG: [LookingGlass/info] SSH agent: enabled
+Gjs-Message: 01:29:27.736: JS LOG: [LookingGlass/info] loaded at Mon Jul 06 2026 01:29:27 GMT-0500 (hora estándar de Colombia)
+Gjs-Message: 01:29:27.736: JS LOG: Cinnamon started at Mon Jul 06 2026 01:29:27 GMT-0500 (hora estándar de Colombia)
+current session already has an ibus-daemon.
+Gjs-Message: 01:29:27.841: JS LOG: [LookingGlass/info] ExtensionSystem started in 3 ms
+Gjs-Message: 01:29:27.841: JS LOG: [LookingGlass/info] DeskletManager started in 3 ms
+Gjs-Message: 01:29:27.841: JS LOG: [LookingGlass/info] SearchProviderManager started in 2 ms
+Gjs-Message: 01:29:28.261: JS LOG: [LookingGlass/info] Loaded applet removable-drives@cinnamon.org in 91 ms
+Gjs-Message: 01:29:28.272: JS LOG: [LookingGlass/info] Loaded applet favorites@cinnamon.org in 11 ms
+Gjs-Message: 01:29:28.297: JS LOG: [LookingGlass/info] Loaded applet cornerbar@cinnamon.org in 24 ms
+Gjs-Message: 01:29:28.338: JS LOG: [LookingGlass/info] Loaded applet temperature@fevimu in 41 ms
+Gjs-Message: 01:29:28.376: JS LOG: [LookingGlass/info] Loaded applet notifications@cinnamon.org in 38 ms
+Gjs-Message: 01:29:28.420: JS LOG: [LookingGlass/info] Loaded applet printers@cinnamon.org in 44 ms
+Gjs-Message: 01:29:28.494: JS LOG: [LookingGlass/info] Loaded applet calendar@cinnamon.org in 74 ms
+Gjs-Message: 01:29:28.507: JS LOG: [LookingGlass/info] Loaded applet keyboard@cinnamon.org in 13 ms
+Gjs-Message: 01:29:28.513: JS LOG: [LookingGlass/info] Role locked: tray
+Gjs-Message: 01:29:28.518: JS LOG: [LookingGlass/info] Loaded applet systray@cinnamon.org in 11 ms
+Gjs-Message: 01:29:28.532: JS LOG: [LookingGlass/info] Loaded applet xapp-status@cinnamon.org in 14 ms
+Gjs-Message: 01:29:28.538: JS LOG: [LookingGlass/info] Installing settings for systemmonitor@dannt
+Gjs-Message: 01:29:28.538: JS LOG: [LookingGlass/info] Settings successfully installed for systemmonitor@dannt
+Gjs-Message: 01:29:28.557: JS LOG: [LookingGlass/info] Loaded applet systemmonitor@dannt in 25 ms
+Gjs-Message: 01:29:28.614: JS LOG: [LookingGlass/info] Loaded applet bluetooth-battery@zamszowy in 57 ms
+Gjs-Message: 01:29:28.619: JS LOG: calendar@cinnamon.org: Calendar events supported.
+Gjs-Message: 01:29:28.665: JS LOG: [LookingGlass/info] Loaded applet power@cinnamon.org in 51 ms
+Gjs-Message: 01:29:28.693: JS LOG: [LookingGlass/info] Role locked: panellauncher
+Gjs-Message: 01:29:28.693: JS LOG: [LookingGlass/info] Role locked: windowattentionhandler
+Gjs-Message: 01:29:28.696: JS LOG: [LookingGlass/info] Monitor Watch List updated: [0]
+Gjs-Message: 01:29:28.696: JS LOG: [LookingGlass/info] Loaded applet grouped-window-list@cinnamon.org in 31 ms
+Gjs-Message: 01:29:28.703: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: blueman (:1.64/org/x/StatusIcon/Icon)
+Gjs-Message: 01:29:28.708: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintUpdate.py (:1.98/org/x/StatusIcon/Icon)
+Gjs-Message: 01:29:28.713: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintreport (:1.113/org/x/StatusIcon/Icon)
+Gjs-Message: 01:29:28.715: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: process-monitor (:1.113/org/x/StatusIcon/Icon_1)
+Gjs-Message: 01:29:28.775: JS LOG: [LookingGlass/info] Loaded applet sound@cinnamon.org in 79 ms
+Gjs-Message: 01:29:28.822: JS LOG: [LookingGlass/info] Loaded applet network@cinnamon.org in 47 ms
+Gjs-Message: 01:29:29.106: JS LOG: [LookingGlass/info] Loaded applet menu@cinnamon.org in 284 ms
+Gjs-Message: 01:29:29.107: JS LOG: [LookingGlass/info] AppletManager started in 1281 ms
+Gjs-Message: 01:29:29.115: JS LOG: [LookingGlass/info] Cinnamon took 1646 ms to start
+╭─ ~ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 01:29:26 AM
+╰─❯ Gjs-Message: 01:29:29.634: JS LOG: [LookingGlass/info] GPU offload supported: false
+❯ 
+❯ xlet-settings applet systemmonitor@dannt
+KeybindingWidgets session type: x11
+Traceback (most recent call last):
+  File "/usr/share/cinnamon/cinnamon-settings/xlet-settings.py", line 555, in <module>
+    window = MainWindow(args)
+             ^^^^^^^^^^^^^^^^
+  File "/usr/share/cinnamon/cinnamon-settings/xlet-settings.py", line 108, in __init__
+    self.load_instances()
+  File "/usr/share/cinnamon/cinnamon-settings/xlet-settings.py", line 322, in load_instances
+    self.build_with_layout(settings_map, info, instance_box, first_key)
+  File "/usr/share/cinnamon/cinnamon-settings/xlet-settings.py", line 364, in build_with_layout
+    item = settings_map[key]
+           ~~~~~~~~~~~~^^^^^
+KeyError: 'cpu-icon-size'
+╭─ ~ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 8s 01:29:58 AM
+╰─❯ Window manager warning: META_CURRENT_TIME used to choose focus window; focus╭─ ~ ─────────────────────────────────────────────────────────── 8s 01:29:58 AM
+╰─❯ Gjs-Message: 01:31:58.766: Profiler is disabled. Not setting up signals.
+Gjs-Message: 01:31:59.055: JS LOG: About to start Cinnamon (X11 backend)
+Gjs-Message: 01:31:59.102: JS LOG: [LookingGlass/info] Cinnamon.AppSystem.get_default() started in 0 ms
+Gjs-Message: 01:31:59.106: JS LOG: [LookingGlass/info] loading user theme: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon/cinnamon.css
+Gjs-Message: 01:31:59.126: JS LOG: [LookingGlass/info] added icon directory: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon
+Gjs-Message: 01:31:59.140: JS LOG: [LookingGlass/info] Set up Touchegg client
+Gjs-Message: 01:31:59.256: JS LOG: [LookingGlass/info] Animations: enabled (hardware rendering, enabled in settings)
+Gjs-Message: 01:31:59.293: JS LOG: [LookingGlass/info] NetworkManager agent: enabled
+Gjs-Message: 01:31:59.301: JS LOG: [LookingGlass/info] Cinnamon registered as the Polkit agent for the active session (c2)
+Gjs-Message: 01:31:59.302: JS LOG: [LookingGlass/info] SSH agent: enabled
+Gjs-Message: 01:31:59.309: JS LOG: [LookingGlass/info] loaded at Mon Jul 06 2026 01:31:59 GMT-0500 (hora estándar de Colombia)
+Gjs-Message: 01:31:59.309: JS LOG: Cinnamon started at Mon Jul 06 2026 01:31:59 GMT-0500 (hora estándar de Colombia)
+current session already has an ibus-daemon.
+Gjs-Message: 01:31:59.406: JS LOG: [LookingGlass/info] ExtensionSystem started in 4 ms
+Gjs-Message: 01:31:59.408: JS LOG: [LookingGlass/info] DeskletManager started in 5 ms
+Gjs-Message: 01:31:59.408: JS LOG: [LookingGlass/info] SearchProviderManager started in 5 ms
+Gjs-Message: 01:31:59.724: JS LOG: [LookingGlass/info] Role locked: tray
+Gjs-Message: 01:31:59.732: JS LOG: [LookingGlass/info] Loaded applet systray@cinnamon.org in 48 ms
+Gjs-Message: 01:31:59.746: JS LOG: [LookingGlass/info] Loaded applet favorites@cinnamon.org in 13 ms
+Gjs-Message: 01:31:59.755: JS LOG: [LookingGlass/info] Loaded applet removable-drives@cinnamon.org in 8 ms
+Gjs-Message: 01:31:59.810: JS LOG: [LookingGlass/info] Loaded applet keyboard@cinnamon.org in 55 ms
+Gjs-Message: 01:31:59.844: JS LOG: [LookingGlass/info] Loaded applet notifications@cinnamon.org in 34 ms
+Gjs-Message: 01:31:59.880: JS LOG: [LookingGlass/info] Loaded applet printers@cinnamon.org in 36 ms
+Gjs-Message: 01:31:59.907: JS LOG: [LookingGlass/info] Loaded applet xapp-status@cinnamon.org in 27 ms
+Gjs-Message: 01:31:59.959: JS LOG: [LookingGlass/info] Loaded applet calendar@cinnamon.org in 52 ms
+Gjs-Message: 01:32:00.039: JS LOG: [LookingGlass/info] Loaded applet temperature@fevimu in 80 ms
+Gjs-Message: 01:32:00.048: JS LOG: [LookingGlass/info] Upgrading settings for systemmonitor@dannt
+Gjs-Message: 01:32:00.049: JS LOG: [LookingGlass/info] Settings successfully upgraded for systemmonitor@dannt
+Gjs-Message: 01:32:00.086: JS LOG: [LookingGlass/info] Loaded applet systemmonitor@dannt in 47 ms
+Gjs-Message: 01:32:00.109: JS LOG: [LookingGlass/info] Loaded applet cornerbar@cinnamon.org in 21 ms
+Gjs-Message: 01:32:00.139: JS LOG: [LookingGlass/info] Loaded applet bluetooth-battery@zamszowy in 30 ms
+Gjs-Message: 01:32:00.162: JS LOG: calendar@cinnamon.org: Calendar events supported.
+Gjs-Message: 01:32:00.243: JS LOG: [LookingGlass/info] Role locked: panellauncher
+Gjs-Message: 01:32:00.243: JS LOG: [LookingGlass/info] Role locked: windowattentionhandler
+Gjs-Message: 01:32:00.250: JS LOG: [LookingGlass/info] Monitor Watch List updated: [0]
+Gjs-Message: 01:32:00.250: JS LOG: [LookingGlass/info] Loaded applet grouped-window-list@cinnamon.org in 111 ms
+Gjs-Message: 01:32:00.276: JS LOG: [LookingGlass/info] Loaded applet power@cinnamon.org in 26 ms
+Gjs-Message: 01:32:00.280: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintUpdate.py (:1.98/org/x/StatusIcon/Icon)
+Gjs-Message: 01:32:00.294: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: blueman (:1.64/org/x/StatusIcon/Icon)
+Gjs-Message: 01:32:00.302: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintreport (:1.113/org/x/StatusIcon/Icon)
+Gjs-Message: 01:32:00.305: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: process-monitor (:1.113/org/x/StatusIcon/Icon_1)
+Gjs-Message: 01:32:00.432: JS LOG: [LookingGlass/info] Loaded applet sound@cinnamon.org in 155 ms
+Gjs-Message: 01:32:00.535: JS LOG: [LookingGlass/info] Loaded applet network@cinnamon.org in 103 ms
+Gjs-Message: 01:32:00.818: JS LOG: [LookingGlass/info] Loaded applet menu@cinnamon.org in 283 ms
+Gjs-Message: 01:32:00.819: JS LOG: [LookingGlass/info] AppletManager started in 1429 ms
+Gjs-Message: 01:32:00.823: JS LOG: [LookingGlass/info] Cinnamon took 1768 ms to start
+╭─ ~ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 8s 01:29:58 AM
+╰─❯ Gjs-Message: 01:32:01.263: JS LOG: [LookingGlass/info] GPU offload supported: false
+❯ c
+❯ xlet-settings applet systemmonitor@dannt
+KeybindingWidgets session type: x11
+╭─ ~ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 4s 01:32:14 AM
+╰─❯ 
+(cinnamon:122777): Gjs-CRITICAL **: 01:32:15.987: JS ERROR: TypeError: _gsmApp is null
+_runSysMon@/home/danny/.local/share/cinnamon/applets/systemmonitor@dannt/applet.js:449:6
+on_applet_clicked@/home/danny/.local/share/cinnamon/applets/systemmonitor@dannt/applet.js:444:14
+_onButtonPressEvent@/usr/share/cinnamon/js/ui/applet.js:283:18
+
+
+(cinnamon:122777): Gjs-CRITICAL **: 01:32:25.961: JS ERROR: TypeError: _gsmApp is null
+_runSysMon@/home/danny/.local/share/cinnamon/applets/systemmonitor@dannt/applet.js:449:6
+on_applet_clicked@/home/danny/.local/share/cinnamon/applets/systemmonitor@dannt/applet.js:444:14
+_onButtonPressEvent@/usr/share/cinnamon/js/ui/applet.js:283:18
+❯ 
+❯ cinnamon --replace & disown
+[1] 123999
+╭─ ~ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 01:32:43 AM
+╭─ ~ ────────────────────────────────────────────────────────────── 01:32:43 AM
+╰─❯ Gjs-Message: 01:32:44.523: JS LOG: About to start Cinnamon (X11 backend)
+Gjs-Message: 01:32:44.574: JS LOG: [LookingGlass/info] Cinnamon.AppSystem.get_default() started in 0 ms
+Gjs-Message: 01:32:44.577: JS LOG: [LookingGlass/info] loading user theme: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon/cinnamon.css
+Gjs-Message: 01:32:44.598: JS LOG: [LookingGlass/info] added icon directory: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon
+Gjs-Message: 01:32:44.614: JS LOG: [LookingGlass/info] Set up Touchegg client
+Gjs-Message: 01:32:44.733: JS LOG: [LookingGlass/info] Animations: enabled (hardware rendering, enabled in settings)
+Gjs-Message: 01:32:44.775: JS LOG: [LookingGlass/info] NetworkManager agent: enabled
+Gjs-Message: 01:32:44.785: JS LOG: [LookingGlass/info] Cinnamon registered as the Polkit agent for the active session (c2)
+Gjs-Message: 01:32:44.786: JS LOG: [LookingGlass/info] SSH agent: enabled
+Gjs-Message: 01:32:44.793: JS LOG: [LookingGlass/info] loaded at Mon Jul 06 2026 01:32:44 GMT-0500 (hora estándar de Colombia)
+Gjs-Message: 01:32:44.793: JS LOG: Cinnamon started at Mon Jul 06 2026 01:32:44 GMT-0500 (hora estándar de Colombia)
+current session already has an ibus-daemon.
+Gjs-Message: 01:32:44.904: JS LOG: [LookingGlass/info] ExtensionSystem started in 1 ms
+Gjs-Message: 01:32:44.905: JS LOG: [LookingGlass/info] DeskletManager started in 1 ms
+Gjs-Message: 01:32:44.905: JS LOG: [LookingGlass/info] SearchProviderManager started in 1 ms
+Gjs-Message: 01:32:45.331: JS LOG: [LookingGlass/info] Role locked: tray
+Gjs-Message: 01:32:45.337: JS LOG: [LookingGlass/info] Loaded applet systray@cinnamon.org in 104 ms
+Gjs-Message: 01:32:45.352: JS LOG: [LookingGlass/info] Loaded applet removable-drives@cinnamon.org in 15 ms
+Gjs-Message: 01:32:45.360: JS LOG: [LookingGlass/info] Loaded applet favorites@cinnamon.org in 8 ms
+Gjs-Message: 01:32:45.396: JS LOG: [LookingGlass/info] Loaded applet systemmonitor@dannt in 36 ms
+Gjs-Message: 01:32:45.425: JS LOG: [LookingGlass/info] Loaded applet notifications@cinnamon.org in 29 ms
+Gjs-Message: 01:32:45.451: JS LOG: [LookingGlass/info] Loaded applet printers@cinnamon.org in 25 ms
+Gjs-Message: 01:32:45.520: JS LOG: [LookingGlass/info] Loaded applet calendar@cinnamon.org in 69 ms
+Gjs-Message: 01:32:45.539: JS LOG: [LookingGlass/info] Loaded applet keyboard@cinnamon.org in 19 ms
+Gjs-Message: 01:32:45.553: JS LOG: [LookingGlass/info] Loaded applet cornerbar@cinnamon.org in 14 ms
+Gjs-Message: 01:32:45.603: JS LOG: [LookingGlass/info] Loaded applet temperature@fevimu in 48 ms
+Gjs-Message: 01:32:45.640: JS LOG: [LookingGlass/info] Loaded applet bluetooth-battery@zamszowy in 37 ms
+Gjs-Message: 01:32:45.653: JS LOG: [LookingGlass/info] Loaded applet xapp-status@cinnamon.org in 13 ms
+Gjs-Message: 01:32:45.668: JS LOG: calendar@cinnamon.org: Calendar events supported.
+Gjs-Message: 01:32:45.706: JS LOG: [LookingGlass/info] Role locked: panellauncher
+Gjs-Message: 01:32:45.707: JS LOG: [LookingGlass/info] Role locked: windowattentionhandler
+Gjs-Message: 01:32:45.714: JS LOG: [LookingGlass/info] Monitor Watch List updated: [0]
+Gjs-Message: 01:32:45.714: JS LOG: [LookingGlass/info] Loaded applet grouped-window-list@cinnamon.org in 61 ms
+Gjs-Message: 01:32:45.813: JS LOG: [LookingGlass/info] Loaded applet power@cinnamon.org in 98 ms
+Gjs-Message: 01:32:45.861: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: blueman (:1.64/org/x/StatusIcon/Icon)
+Gjs-Message: 01:32:45.867: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintreport (:1.113/org/x/StatusIcon/Icon)
+Gjs-Message: 01:32:45.870: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: process-monitor (:1.113/org/x/StatusIcon/Icon_1)
+Gjs-Message: 01:32:45.879: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintUpdate.py (:1.98/org/x/StatusIcon/Icon)
+Gjs-Message: 01:32:45.928: JS LOG: [LookingGlass/info] Loaded applet sound@cinnamon.org in 115 ms
+Gjs-Message: 01:32:46.215: JS LOG: [LookingGlass/info] Loaded applet menu@cinnamon.org in 286 ms
+Gjs-Message: 01:32:46.230: JS LOG: [LookingGlass/info] Loaded applet network@cinnamon.org in 15 ms
+Gjs-Message: 01:32:46.231: JS LOG: [LookingGlass/info] AppletManager started in 1336 ms
+Gjs-Message: 01:32:46.238: JS LOG: [LookingGlass/info] Cinnamon took 1714 ms to start
+╭─ ~ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 01:32:43 AM
+❯ 
+❯ xlet-settings applet systemmonitor@dannt
+Gjs-Message: 01:32:48.989: JS LOG: Enabling WindowAttentionHandler
+KeybindingWidgets session type: x11
+❯ xlet-settings applet systemmonitor@dannt
+KeybindingWidgets session type: x11
+
+(cinnamon:123999): Gjs-CRITICAL **: 01:32:56.104: JS ERROR: TypeError: _gsmApp is null
+_runSysMon@/home/danny/.local/share/cinnamon/applets/systemmonitor@dannt/applet.js:449:6
+on_applet_clicked@/home/danny/.local/share/cinnamon/applets/systemmonitor@dannt/applet.js:444:14
+_onButtonPressEvent@/usr/share/cinnamon/js/ui/applet.js:283:18
+
+Window manager warning: META_CURRENT_TIME used to choose focus window; focus window may not be correct.
+Gjs-Message: 01:36:29.038: Profiler is disabled. Not setting up signals.
+Gjs-Message: 01:36:29.358: JS LOG: About to start Cinnamon (X11 backend)
+Gjs-Message: 01:36:29.407: JS LOG: [LookingGlass/info] Cinnamon.AppSystem.get_default() started in 0 ms
+Gjs-Message: 01:36:29.411: JS LOG: [LookingGlass/info] loading user theme: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon/cinnamon.css
+Gjs-Message: 01:36:29.432: JS LOG: [LookingGlass/info] added icon directory: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon
+Gjs-Message: 01:36:29.446: JS LOG: [LookingGlass/info] Set up Touchegg client
+Gjs-Message: 01:36:29.562: JS LOG: [LookingGlass/info] Animations: enabled (hardware rendering, enabled in settings)
+Gjs-Message: 01:36:29.601: JS LOG: [LookingGlass/info] NetworkManager agent: enabled
+Gjs-Message: 01:36:29.608: JS LOG: [LookingGlass/info] Cinnamon registered as the Polkit agent for the active session (c2)
+Gjs-Message: 01:36:29.609: JS LOG: [LookingGlass/info] SSH agent: enabled
+Gjs-Message: 01:36:29.615: JS LOG: [LookingGlass/info] loaded at Mon Jul 06 2026 01:36:29 GMT-0500 (hora estándar de Colombia)
+Gjs-Message: 01:36:29.615: JS LOG: Cinnamon started at Mon Jul 06 2026 01:36:29 GMT-0500 (hora estándar de Colombia)
+current session already has an ibus-daemon.
+Gjs-Message: 01:36:29.714: JS LOG: [LookingGlass/info] ExtensionSystem started in 1 ms
+Gjs-Message: 01:36:29.715: JS LOG: [LookingGlass/info] DeskletManager started in 1 ms
+Gjs-Message: 01:36:29.715: JS LOG: [LookingGlass/info] SearchProviderManager started in 2 ms
+Gjs-Message: 01:36:30.020: JS LOG: [LookingGlass/info] Role locked: tray
+Gjs-Message: 01:36:30.026: JS LOG: [LookingGlass/info] Loaded applet systray@cinnamon.org in 29 ms
+Gjs-Message: 01:36:30.058: JS LOG: [LookingGlass/info] Loaded applet favorites@cinnamon.org in 32 ms
+Gjs-Message: 01:36:30.138: JS LOG: [LookingGlass/info] Loaded applet temperature@fevimu in 79 ms
+Gjs-Message: 01:36:30.152: JS LOG: [LookingGlass/info] Loaded applet keyboard@cinnamon.org in 14 ms
+Gjs-Message: 01:36:30.185: JS LOG: [LookingGlass/info] Loaded applet systemmonitor@dannt in 33 ms
+Gjs-Message: 01:36:30.202: JS LOG: [LookingGlass/info] Loaded applet xapp-status@cinnamon.org in 17 ms
+Gjs-Message: 01:36:30.221: JS LOG: [LookingGlass/info] Loaded applet bluetooth-battery@zamszowy in 19 ms
+Gjs-Message: 01:36:30.283: JS LOG: [LookingGlass/info] Loaded applet printers@cinnamon.org in 62 ms
+Gjs-Message: 01:36:30.299: JS LOG: [LookingGlass/info] Loaded applet notifications@cinnamon.org in 16 ms
+Gjs-Message: 01:36:30.307: JS LOG: [LookingGlass/info] Loaded applet removable-drives@cinnamon.org in 7 ms
+Gjs-Message: 01:36:30.383: JS LOG: [LookingGlass/info] Loaded applet cornerbar@cinnamon.org in 75 ms
+Gjs-Message: 01:36:30.435: JS LOG: [LookingGlass/info] Loaded applet calendar@cinnamon.org in 51 ms
+Gjs-Message: 01:36:30.441: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: blueman (:1.64/org/x/StatusIcon/Icon)
+Gjs-Message: 01:36:30.446: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintreport (:1.113/org/x/StatusIcon/Icon)
+Gjs-Message: 01:36:30.450: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: process-monitor (:1.113/org/x/StatusIcon/Icon_1)
+Gjs-Message: 01:36:30.458: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintUpdate.py (:1.98/org/x/StatusIcon/Icon)
+Gjs-Message: 01:36:30.478: JS LOG: calendar@cinnamon.org: Calendar events supported.
+Gjs-Message: 01:36:30.492: JS LOG: [LookingGlass/info] Role locked: panellauncher
+Gjs-Message: 01:36:30.492: JS LOG: [LookingGlass/info] Role locked: windowattentionhandler
+Gjs-Message: 01:36:30.495: JS LOG: [LookingGlass/info] Monitor Watch List updated: [0]
+Gjs-Message: 01:36:30.496: JS LOG: [LookingGlass/info] Loaded applet grouped-window-list@cinnamon.org in 60 ms
+Gjs-Message: 01:36:30.523: JS LOG: [LookingGlass/info] Loaded applet power@cinnamon.org in 27 ms
+Gjs-Message: 01:36:30.564: JS LOG: [LookingGlass/info] Loaded applet sound@cinnamon.org in 40 ms
+Gjs-Message: 01:36:30.851: JS LOG: [LookingGlass/info] Loaded applet menu@cinnamon.org in 287 ms
+Gjs-Message: 01:36:30.928: JS LOG: [LookingGlass/info] Loaded applet network@cinnamon.org in 77 ms
+Gjs-Message: 01:36:30.931: JS LOG: [LookingGlass/info] AppletManager started in 1227 ms
+Gjs-Message: 01:36:30.937: JS LOG: [LookingGlass/info] Cinnamon took 1579 ms to start
+Gjs-Message: 01:36:31.127: JS LOG: Unknown network device type, is 32
+Gjs-Message: 01:36:31.432: JS LOG: [LookingGlass/info] GPU offload supported: false
+Gjs-Message: 01:36:33.990: JS LOG: Enabling WindowAttentionHandler
+^C%                                                                                                                                                                                                                              ❯ xlet-settings applet systemmonitor@dannt
+KeybindingWidgets session type: x11
+
+(cinnamon:123999): Gjs-CRITICAL **: 01:36:40.537: JS ERROR: ReferenceError: Util is not defined
+_runSysMon@/home/danny/.local/share/cinnamon/applets/systemmonitor@dannt/applet.js:452:13
+on_applet_clicked@/home/danny/.local/share/cinnamon/applets/systemmonitor@dannt/applet.js:444:14
+_onButtonPressEvent@/usr/share/cinnamon/js/ui/applet.js:283:18
+
+Window manager warning: META_CURRENT_TIME used to choose focus window; focus window may not be correct.
+Gjs-Message: 01:39:31.065: Profiler is disabled. Not setting up signals.
+Gjs-Message: 01:39:31.386: JS LOG: About to start Cinnamon (X11 backend)
+Gjs-Message: 01:39:31.434: JS LOG: [LookingGlass/info] Cinnamon.AppSystem.get_default() started in 0 ms
+Gjs-Message: 01:39:31.439: JS LOG: [LookingGlass/info] loading user theme: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon/cinnamon.css
+Gjs-Message: 01:39:31.459: JS LOG: [LookingGlass/info] added icon directory: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon
+Gjs-Message: 01:39:31.472: JS LOG: [LookingGlass/info] Set up Touchegg client
+Gjs-Message: 01:39:31.589: JS LOG: [LookingGlass/info] Animations: enabled (hardware rendering, enabled in settings)
+Gjs-Message: 01:39:31.627: JS LOG: [LookingGlass/info] NetworkManager agent: enabled
+Gjs-Message: 01:39:31.634: JS LOG: [LookingGlass/info] Cinnamon registered as the Polkit agent for the active session (c2)
+Gjs-Message: 01:39:31.636: JS LOG: [LookingGlass/info] SSH agent: enabled
+Gjs-Message: 01:39:31.642: JS LOG: [LookingGlass/info] loaded at Mon Jul 06 2026 01:39:31 GMT-0500 (hora estándar de Colombia)
+Gjs-Message: 01:39:31.643: JS LOG: Cinnamon started at Mon Jul 06 2026 01:39:31 GMT-0500 (hora estándar de Colombia)
+current session already has an ibus-daemon.
+Gjs-Message: 01:39:31.749: JS LOG: [LookingGlass/info] ExtensionSystem started in 1 ms
+Gjs-Message: 01:39:31.750: JS LOG: [LookingGlass/info] DeskletManager started in 2 ms
+Gjs-Message: 01:39:31.750: JS LOG: [LookingGlass/info] SearchProviderManager started in 1 ms
+Gjs-Message: 01:39:32.214: JS LOG: [LookingGlass/info] Loaded applet removable-drives@cinnamon.org in 76 ms
+Gjs-Message: 01:39:32.224: JS LOG: [LookingGlass/info] Loaded applet favorites@cinnamon.org in 10 ms
+Gjs-Message: 01:39:32.229: JS LOG: [LookingGlass/info] Role locked: tray
+Gjs-Message: 01:39:32.237: JS LOG: [LookingGlass/info] Loaded applet systray@cinnamon.org in 13 ms
+Gjs-Message: 01:39:32.282: JS LOG: [LookingGlass/info] Loaded applet notifications@cinnamon.org in 45 ms
+Gjs-Message: 01:39:32.309: JS LOG: [LookingGlass/info] Loaded applet printers@cinnamon.org in 27 ms
+Gjs-Message: 01:39:32.328: JS LOG: [LookingGlass/info] Loaded applet keyboard@cinnamon.org in 19 ms
+Gjs-Message: 01:39:32.386: JS LOG: [LookingGlass/info] Loaded applet calendar@cinnamon.org in 58 ms
+Gjs-Message: 01:39:32.398: JS LOG: [LookingGlass/info] Loaded applet cornerbar@cinnamon.org in 12 ms
+Gjs-Message: 01:39:32.445: JS LOG: [LookingGlass/info] Loaded applet temperature@fevimu in 47 ms
+Gjs-Message: 01:39:32.491: JS LOG: [LookingGlass/info] Loaded applet systemmonitor@dannt in 46 ms
+Gjs-Message: 01:39:32.514: JS LOG: [LookingGlass/info] Loaded applet xapp-status@cinnamon.org in 23 ms
+Gjs-Message: 01:39:32.539: JS LOG: [LookingGlass/info] Loaded applet bluetooth-battery@zamszowy in 25 ms
+Gjs-Message: 01:39:32.541: JS LOG: calendar@cinnamon.org: Calendar events supported.
+Gjs-Message: 01:39:32.629: JS LOG: [LookingGlass/info] Loaded applet power@cinnamon.org in 90 ms
+Gjs-Message: 01:39:32.763: JS LOG: [LookingGlass/info] Role locked: panellauncher
+Gjs-Message: 01:39:32.765: JS LOG: [LookingGlass/info] Role locked: windowattentionhandler
+Gjs-Message: 01:39:32.774: JS LOG: [LookingGlass/info] Monitor Watch List updated: [0]
+Gjs-Message: 01:39:32.776: JS LOG: [LookingGlass/info] Loaded applet grouped-window-list@cinnamon.org in 147 ms
+Gjs-Message: 01:39:32.780: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintreport (:1.113/org/x/StatusIcon/Icon)
+Gjs-Message: 01:39:32.791: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: process-monitor (:1.113/org/x/StatusIcon/Icon_1)
+Gjs-Message: 01:39:32.851: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintUpdate.py (:1.98/org/x/StatusIcon/Icon)
+Gjs-Message: 01:39:32.864: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: blueman (:1.64/org/x/StatusIcon/Icon)
+Gjs-Message: 01:39:32.979: JS LOG: [LookingGlass/info] Loaded applet sound@cinnamon.org in 203 ms
+Gjs-Message: 01:39:33.029: JS LOG: [LookingGlass/info] Loaded applet network@cinnamon.org in 50 ms
+Gjs-Message: 01:39:33.272: JS LOG: [LookingGlass/info] Loaded applet menu@cinnamon.org in 243 ms
+Gjs-Message: 01:39:33.274: JS LOG: [LookingGlass/info] AppletManager started in 1537 ms
+Gjs-Message: 01:39:33.282: JS LOG: [LookingGlass/info] Cinnamon took 1896 ms to start
+Gjs-Message: 01:39:33.381: JS LOG: Unknown network device type, is 32
+Gjs-Message: 01:39:33.742: JS LOG: [LookingGlass/info] GPU offload supported: false
+Gjs-Message: 01:39:35.989: JS LOG: Enabling WindowAttentionHandler
+^C%                                                                                                                                                                                                                              ❯ xlet-settings applet systemmonitor@dannt
+KeybindingWidgets session type: x11
+❯ # se borra la config  corrupta
+    rm ~/.config/cinnamon/spices/systemmonitor@dannt/systemmonitor@dannt.json
+    # Creamos la carpeta de configs antigua por si acaso
+    mkdir -p ~/.cinnamon/configs/systemmonitor@dannt
+    # Reiniciamos Cinnamon
+    cinnamon --replace & disown
+[1] 126794
+╭─ ~ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 01:41:04 AM
+╭─ ~ ────────────────────────────────────────────────────────────── 01:41:04 AM
+╰─❯ Gjs-Message: 01:41:05.136: JS LOG: About to start Cinnamon (X11 backend)
+Gjs-Message: 01:41:05.183: JS LOG: [LookingGlass/info] Cinnamon.AppSystem.get_default() started in 0 ms
+Gjs-Message: 01:41:05.187: JS LOG: [LookingGlass/info] loading user theme: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon/cinnamon.css
+Gjs-Message: 01:41:05.208: JS LOG: [LookingGlass/info] added icon directory: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon
+Gjs-Message: 01:41:05.221: JS LOG: [LookingGlass/info] Set up Touchegg client
+Gjs-Message: 01:41:05.339: JS LOG: [LookingGlass/info] Animations: enabled (hardware rendering, enabled in settings)
+Gjs-Message: 01:41:05.376: JS LOG: [LookingGlass/info] NetworkManager agent: enabled
+Gjs-Message: 01:41:05.384: JS LOG: [LookingGlass/info] Cinnamon registered as the Polkit agent for the active session (c2)
+Gjs-Message: 01:41:05.385: JS LOG: [LookingGlass/info] SSH agent: enabled
+Gjs-Message: 01:41:05.392: JS LOG: [LookingGlass/info] loaded at Mon Jul 06 2026 01:41:05 GMT-0500 (hora estándar de Colombia)
+Gjs-Message: 01:41:05.392: JS LOG: Cinnamon started at Mon Jul 06 2026 01:41:05 GMT-0500 (hora estándar de Colombia)
+current session already has an ibus-daemon.
+Gjs-Message: 01:41:05.496: JS LOG: [LookingGlass/info] ExtensionSystem started in 2 ms
+Gjs-Message: 01:41:05.497: JS LOG: [LookingGlass/info] DeskletManager started in 3 ms
+Gjs-Message: 01:41:05.497: JS LOG: [LookingGlass/info] SearchProviderManager started in 3 ms
+Gjs-Message: 01:41:05.825: JS LOG: [LookingGlass/info] Role locked: tray
+Gjs-Message: 01:41:05.832: JS LOG: [LookingGlass/info] Loaded applet systray@cinnamon.org in 58 ms
+Gjs-Message: 01:41:05.842: JS LOG: [LookingGlass/info] Loaded applet removable-drives@cinnamon.org in 10 ms
+Gjs-Message: 01:41:05.850: JS LOG: [LookingGlass/info] Loaded applet favorites@cinnamon.org in 8 ms
+Gjs-Message: 01:41:05.941: JS LOG: [LookingGlass/info] Loaded applet notifications@cinnamon.org in 91 ms
+Gjs-Message: 01:41:05.971: JS LOG: [LookingGlass/info] Loaded applet printers@cinnamon.org in 30 ms
+Gjs-Message: 01:41:06.022: JS LOG: [LookingGlass/info] Loaded applet calendar@cinnamon.org in 50 ms
+Gjs-Message: 01:41:06.061: JS LOG: [LookingGlass/info] Loaded applet temperature@fevimu in 39 ms
+Gjs-Message: 01:41:06.079: JS LOG: [LookingGlass/info] Installing settings for systemmonitor@dannt
+Gjs-Message: 01:41:06.079: JS LOG: [LookingGlass/info] Settings successfully installed for systemmonitor@dannt
+Gjs-Message: 01:41:06.133: JS LOG: [LookingGlass/info] Loaded applet systemmonitor@dannt in 69 ms
+Gjs-Message: 01:41:06.151: JS LOG: [LookingGlass/info] Loaded applet keyboard@cinnamon.org in 17 ms
+Gjs-Message: 01:41:06.170: JS LOG: [LookingGlass/info] Loaded applet cornerbar@cinnamon.org in 18 ms
+Gjs-Message: 01:41:06.189: JS LOG: [LookingGlass/info] Loaded applet xapp-status@cinnamon.org in 19 ms
+Gjs-Message: 01:41:06.207: JS LOG: [LookingGlass/info] Loaded applet bluetooth-battery@zamszowy in 18 ms
+Gjs-Message: 01:41:06.215: JS LOG: calendar@cinnamon.org: Calendar events supported.
+Gjs-Message: 01:41:06.289: JS LOG: [LookingGlass/info] Loaded applet power@cinnamon.org in 82 ms
+Gjs-Message: 01:41:06.327: JS LOG: [LookingGlass/info] Role locked: panellauncher
+Gjs-Message: 01:41:06.327: JS LOG: [LookingGlass/info] Role locked: windowattentionhandler
+Gjs-Message: 01:41:06.339: JS LOG: [LookingGlass/info] Monitor Watch List updated: [0]
+Gjs-Message: 01:41:06.339: JS LOG: [LookingGlass/info] Loaded applet grouped-window-list@cinnamon.org in 50 ms
+Gjs-Message: 01:41:06.344: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintUpdate.py (:1.98/org/x/StatusIcon/Icon)
+Gjs-Message: 01:41:06.363: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintreport (:1.113/org/x/StatusIcon/Icon)
+Gjs-Message: 01:41:06.369: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: process-monitor (:1.113/org/x/StatusIcon/Icon_1)
+Gjs-Message: 01:41:06.385: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: blueman (:1.64/org/x/StatusIcon/Icon)
+Gjs-Message: 01:41:06.601: JS LOG: [LookingGlass/info] Loaded applet sound@cinnamon.org in 262 ms
+Gjs-Message: 01:41:06.634: JS LOG: [LookingGlass/info] Loaded applet network@cinnamon.org in 32 ms
+Gjs-Message: 01:41:06.933: JS LOG: [LookingGlass/info] Loaded applet menu@cinnamon.org in 299 ms
+Gjs-Message: 01:41:06.934: JS LOG: [LookingGlass/info] AppletManager started in 1449 ms
+Gjs-Message: 01:41:06.939: JS LOG: [LookingGlass/info] Cinnamon took 1803 ms to start
+╭─ ~ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 01:41:04 AM
+╰─❯ Gjs-Message: 01:41:07.407: JS LOG: [LookingGlass/info] GPU offload supported: false
+╭─ ~ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 01:41:04 AM
+╰─❯ Window manager warning: META_CURRENT_TIME used to choose focus window; focus╭─ ~ ────────────────────────────────────────────────────────────── 01:41:04 AM
+╰─❯ Gjs-Message: 01:50:57.453: Profiler is disabled. Not setting up signals.
+Gjs-Message: 01:50:57.758: JS LOG: About to start Cinnamon (X11 backend)
+Gjs-Message: 01:50:57.805: JS LOG: [LookingGlass/info] Cinnamon.AppSystem.get_default() started in 0 ms
+Gjs-Message: 01:50:57.809: JS LOG: [LookingGlass/info] loading user theme: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon/cinnamon.css
+Gjs-Message: 01:50:57.830: JS LOG: [LookingGlass/info] added icon directory: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon
+Gjs-Message: 01:50:57.846: JS LOG: [LookingGlass/info] Set up Touchegg client
+Gjs-Message: 01:50:57.964: JS LOG: [LookingGlass/info] Animations: enabled (hardware rendering, enabled in settings)
+Gjs-Message: 01:50:58.002: JS LOG: [LookingGlass/info] NetworkManager agent: enabled
+Gjs-Message: 01:50:58.009: JS LOG: [LookingGlass/info] Cinnamon registered as the Polkit agent for the active session (c2)
+Gjs-Message: 01:50:58.010: JS LOG: [LookingGlass/info] SSH agent: enabled
+Gjs-Message: 01:50:58.017: JS LOG: [LookingGlass/info] loaded at Mon Jul 06 2026 01:50:58 GMT-0500 (hora estándar de Colombia)
+Gjs-Message: 01:50:58.017: JS LOG: Cinnamon started at Mon Jul 06 2026 01:50:58 GMT-0500 (hora estándar de Colombia)
+current session already has an ibus-daemon.
+Gjs-Message: 01:50:58.124: JS LOG: [LookingGlass/info] ExtensionSystem started in 1 ms
+Gjs-Message: 01:50:58.125: JS LOG: [LookingGlass/info] DeskletManager started in 2 ms
+Gjs-Message: 01:50:58.125: JS LOG: [LookingGlass/info] SearchProviderManager started in 2 ms
+Gjs-Message: 01:50:58.633: JS LOG: [LookingGlass/info] Role locked: tray
+Gjs-Message: 01:50:58.641: JS LOG: [LookingGlass/info] Loaded applet systray@cinnamon.org in 180 ms
+Gjs-Message: 01:50:58.654: JS LOG: [LookingGlass/info] Loaded applet removable-drives@cinnamon.org in 13 ms
+Gjs-Message: 01:50:58.663: JS LOG: [LookingGlass/info] Loaded applet favorites@cinnamon.org in 9 ms
+Gjs-Message: 01:50:58.719: JS LOG: [LookingGlass/info] Loaded applet notifications@cinnamon.org in 56 ms
+Gjs-Message: 01:50:58.747: JS LOG: [LookingGlass/info] Loaded applet printers@cinnamon.org in 28 ms
+Gjs-Message: 01:50:58.810: JS LOG: [LookingGlass/info] Loaded applet calendar@cinnamon.org in 63 ms
+Gjs-Message: 01:50:58.827: JS LOG: [LookingGlass/info] Loaded applet cornerbar@cinnamon.org in 16 ms
+Gjs-Message: 01:50:58.873: JS LOG: [LookingGlass/info] Loaded applet temperature@fevimu in 46 ms
+Gjs-Message: 01:50:58.934: JS LOG: [LookingGlass/info] Loaded applet systemmonitor@dannt in 61 ms
+Gjs-Message: 01:50:58.966: JS LOG: [LookingGlass/info] Loaded applet keyboard@cinnamon.org in 32 ms
+Gjs-Message: 01:50:58.976: JS LOG: [LookingGlass/info] Loaded applet xapp-status@cinnamon.org in 9 ms
+Gjs-Message: 01:50:59.002: JS LOG: [LookingGlass/info] Loaded applet bluetooth-battery@zamszowy in 26 ms
+Gjs-Message: 01:50:59.005: JS LOG: calendar@cinnamon.org: Calendar events supported.
+Gjs-Message: 01:50:59.054: JS LOG: [LookingGlass/info] Loaded applet power@cinnamon.org in 52 ms
+Gjs-Message: 01:50:59.172: JS LOG: [LookingGlass/info] Role locked: panellauncher
+Gjs-Message: 01:50:59.174: JS LOG: [LookingGlass/info] Role locked: windowattentionhandler
+Gjs-Message: 01:50:59.188: JS LOG: [LookingGlass/info] Monitor Watch List updated: [0]
+Gjs-Message: 01:50:59.191: JS LOG: [LookingGlass/info] Loaded applet grouped-window-list@cinnamon.org in 137 ms
+Gjs-Message: 01:50:59.215: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: blueman (:1.64/org/x/StatusIcon/Icon)
+Gjs-Message: 01:50:59.230: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintreport (:1.113/org/x/StatusIcon/Icon)
+Gjs-Message: 01:50:59.236: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: process-monitor (:1.113/org/x/StatusIcon/Icon_1)
+Gjs-Message: 01:50:59.261: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintUpdate.py (:1.98/org/x/StatusIcon/Icon)
+Gjs-Message: 01:50:59.359: JS LOG: [LookingGlass/info] Loaded applet sound@cinnamon.org in 168 ms
+Gjs-Message: 01:50:59.500: JS LOG: [LookingGlass/info] Loaded applet network@cinnamon.org in 136 ms
+Gjs-Message: 01:50:59.720: JS LOG: [LookingGlass/info] Loaded applet menu@cinnamon.org in 219 ms
+Gjs-Message: 01:50:59.720: JS LOG: [LookingGlass/info] AppletManager started in 1606 ms
+Gjs-Message: 01:50:59.725: JS LOG: [LookingGlass/info] Cinnamon took 1967 ms to start
+╭─ ~ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 01:41:04 AM
+╰─❯ Gjs-Message: 01:51:00.219: JS LOG: [LookingGlass/info] GPU offload supported: false
+❯ xlet-settings applet systemmonitor@dannt
+KeybindingWidgets session type: x11
+
+(cinnamon:126794): Gjs-CRITICAL **: 01:51:11.092: JS ERROR: ReferenceError: Util is not defined
+on_applet_clicked@/home/danny/.local/share/cinnamon/applets/systemmonitor@dannt/applet.js:444:9
+_onButtonPressEvent@/usr/share/cinnamon/js/ui/applet.js:283:18
+
+^C%                                                                                                                                                                                                                              ╭─ ~ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 48s 01:51:55 AM
+╰─❯ 
+(cinnamon:126794): Gjs-CRITICAL **: 01:54:51.276: JS ERROR: ReferenceError: Util is not defined
+on_applet_clicked@/home/danny/.local/share/cinnamon/applets/systemmonitor@dannt/applet.js:444:9
+_onButtonPressEvent@/usr/share/cinnamon/js/ui/applet.js:283:18
+
+
+(cinnamon:126794): Gjs-CRITICAL **: 01:54:53.634: JS ERROR: ReferenceError: Util is not defined
+on_applet_clicked@/home/danny/.local/share/cinnamon/applets/systemmonitor@dannt/applet.js:444:9
+_onButtonPressEvent@/usr/share/cinnamon/js/ui/applet.js:283:18
+
+Window manager warning: META_CURRENT_TIME used to choose focus window; focus win╭─ ~ ────────────────────────────────────────────────────────── 48s 01:51:55 AM
+╰─❯ Gjs-Message: 01:56:33.287: Profiler is disabled. Not setting up signals.
+Gjs-Message: 01:56:33.594: JS LOG: About to start Cinnamon (X11 backend)
+Gjs-Message: 01:56:33.643: JS LOG: [LookingGlass/info] Cinnamon.AppSystem.get_default() started in 0 ms
+Gjs-Message: 01:56:33.646: JS LOG: [LookingGlass/info] loading user theme: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon/cinnamon.css
+Gjs-Message: 01:56:33.667: JS LOG: [LookingGlass/info] added icon directory: /usr/share/themes/Mint-Y-Dark-Aqua/cinnamon
+Gjs-Message: 01:56:33.680: JS LOG: [LookingGlass/info] Set up Touchegg client
+Gjs-Message: 01:56:33.797: JS LOG: [LookingGlass/info] Animations: enabled (hardware rendering, enabled in settings)
+Gjs-Message: 01:56:33.835: JS LOG: [LookingGlass/info] NetworkManager agent: enabled
+Gjs-Message: 01:56:33.842: JS LOG: [LookingGlass/info] Cinnamon registered as the Polkit agent for the active session (c2)
+Gjs-Message: 01:56:33.843: JS LOG: [LookingGlass/info] SSH agent: enabled
+Gjs-Message: 01:56:33.850: JS LOG: [LookingGlass/info] loaded at Mon Jul 06 2026 01:56:33 GMT-0500 (hora estándar de Colombia)
+Gjs-Message: 01:56:33.850: JS LOG: Cinnamon started at Mon Jul 06 2026 01:56:33 GMT-0500 (hora estándar de Colombia)
+current session already has an ibus-daemon.
+Gjs-Message: 01:56:33.960: JS LOG: [LookingGlass/info] ExtensionSystem started in 1 ms
+Gjs-Message: 01:56:33.961: JS LOG: [LookingGlass/info] DeskletManager started in 1 ms
+Gjs-Message: 01:56:33.961: JS LOG: [LookingGlass/info] SearchProviderManager started in 1 ms
+Gjs-Message: 01:56:34.372: JS LOG: [LookingGlass/info] Role locked: tray
+Gjs-Message: 01:56:34.384: JS LOG: [LookingGlass/info] Loaded applet systray@cinnamon.org in 88 ms
+Gjs-Message: 01:56:34.393: JS LOG: [LookingGlass/info] Loaded applet removable-drives@cinnamon.org in 9 ms
+Gjs-Message: 01:56:34.400: JS LOG: [LookingGlass/info] Loaded applet favorites@cinnamon.org in 7 ms
+Gjs-Message: 01:56:34.460: JS LOG: [LookingGlass/info] Loaded applet printers@cinnamon.org in 59 ms
+Gjs-Message: 01:56:34.476: JS LOG: [LookingGlass/info] Loaded applet notifications@cinnamon.org in 16 ms
+Gjs-Message: 01:56:34.490: JS LOG: [LookingGlass/info] Loaded applet keyboard@cinnamon.org in 14 ms
+Gjs-Message: 01:56:34.516: JS LOG: [LookingGlass/info] Loaded applet xapp-status@cinnamon.org in 26 ms
+Gjs-Message: 01:56:34.579: JS LOG: [LookingGlass/info] Loaded applet calendar@cinnamon.org in 63 ms
+Gjs-Message: 01:56:34.615: JS LOG: [LookingGlass/info] Loaded applet temperature@fevimu in 35 ms
+Gjs-Message: 01:56:34.653: JS LOG: [LookingGlass/info] Loaded applet systemmonitor@dannt in 38 ms
+Gjs-Message: 01:56:34.717: JS LOG: [LookingGlass/info] Loaded applet bluetooth-battery@zamszowy in 64 ms
+Gjs-Message: 01:56:34.740: JS LOG: calendar@cinnamon.org: Calendar events supported.
+Gjs-Message: 01:56:34.791: JS LOG: [LookingGlass/info] Loaded applet cornerbar@cinnamon.org in 73 ms
+Gjs-Message: 01:56:34.803: JS LOG: [LookingGlass/info] Role locked: panellauncher
+Gjs-Message: 01:56:34.803: JS LOG: [LookingGlass/info] Role locked: windowattentionhandler
+Gjs-Message: 01:56:34.811: JS LOG: [LookingGlass/info] Monitor Watch List updated: [0]
+Gjs-Message: 01:56:34.812: JS LOG: [LookingGlass/info] Loaded applet grouped-window-list@cinnamon.org in 21 ms
+Gjs-Message: 01:56:34.822: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: blueman (:1.64/org/x/StatusIcon/Icon)
+Gjs-Message: 01:56:34.838: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintreport (:1.113/org/x/StatusIcon/Icon)
+Gjs-Message: 01:56:34.842: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: process-monitor (:1.113/org/x/StatusIcon/Icon_1)
+Gjs-Message: 01:56:34.853: JS LOG: [LookingGlass/info] Adding XAppStatusIcon: mintUpdate.py (:1.98/org/x/StatusIcon/Icon)
+Gjs-Message: 01:56:34.888: JS LOG: [LookingGlass/info] Loaded applet power@cinnamon.org in 74 ms
+Gjs-Message: 01:56:35.075: JS LOG: [LookingGlass/info] Loaded applet sound@cinnamon.org in 187 ms
+Gjs-Message: 01:56:35.118: JS LOG: [LookingGlass/info] Loaded applet network@cinnamon.org in 43 ms
+Gjs-Message: 01:56:35.367: JS LOG: [LookingGlass/info] Loaded applet menu@cinnamon.org in 249 ms
+Gjs-Message: 01:56:35.368: JS LOG: [LookingGlass/info] AppletManager started in 1423 ms
+Gjs-Message: 01:56:35.375: JS LOG: [LookingGlass/info] Cinnamon took 1781 ms to start
+╭─ ~ ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 48s 01:51:55 AM
+╰─❯ Gjs-Message: 01:56:35.932: JS LOG: [LookingGlass/info] GPU offload supported: false
+❯ 
+╭─ ~ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── ✘ INT 01:56:39 AM
+╰─❯ 
+
+
