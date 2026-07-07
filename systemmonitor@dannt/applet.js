@@ -344,7 +344,22 @@ SystemMonitor.prototype = {
                 this.gpuVendor = "intel";
                 this.gpuActFreqPath = path;
                 this.gpuMaxFreqPath = path.replace("gt_act_freq_mhz", "gt_max_freq_mhz");
-                return
+                
+                let intelVramCandidates = [
+                    path.replace("gt_act_freq_mhz", "mem_info_vram_used"),
+                    "/sys/class/drm/card0/device/mem_info_vram_used",
+                    "/sys/class/drm/card1/device/mem_info_vram_used",
+                    "/sys/class/drm/card2/device/mem_info_vram_used",
+                    "/sys/class/drm/card3/device/mem_info_vram_used"
+                ];
+                this.gpuVramPath = null;
+                for (let vramPath of intelVramCandidates) {
+                    if (GLib.file_test(vramPath, GLib.FileTest.EXISTS)) {
+                        this.gpuVramPath = vramPath;
+                        break;
+                    }
+                }
+                return;
             }
         }
 
@@ -381,6 +396,32 @@ SystemMonitor.prototype = {
                     })
                 }
             });
+        } else if (this.gpuVendor == "intel") {
+            let fileAct = Gio.File.new_for_path(this.gpuActFreqPath);
+            fileAct.load_contents_async(null, (source, result) => {
+                try {
+                    let [success, contents] = source.load_contents_finish(result);
+                    if (!success) {
+                        callback({
+                            vendor:"intel", percent: null
+                        });
+                        return;
+                    }
+                    let actFreq = parseInt(imports.byteArray.toString(contents).trim());
+
+                    let [successMax, contentsMax] = GLib.file_get_contents(this.gpuMaxFreqPath);
+                    let maxFreq = successMax ? parseInt(imports.byteArray.toString(contentsMax).trim()): 1;
+                    let percent = maxFreq > 0 ? Math.round((actFreq / maxFreq) * 100) : 0;
+                    callback ({
+                        vendor:"intel", percent: percent
+                    });
+                } catch (e) {
+                    global.logError("Error al leer GPU (intel)" + e.message);
+                    callback({
+                        vendor:"intel", percent: null
+                    });
+                }
+            });
         } else {
             callback({
                 vendor: this.gpuVendor, percent: null
@@ -410,10 +451,38 @@ SystemMonitor.prototype = {
                     });
                 }
             });
+        } else if (this.gpuVendor == "intel") {
+            if (this.gpuVramPath) {
+                let fileVram = Gio.File.new_for_path(this.gpuVramPath);
+                fileVram.load_contents_async(null, (source, result) => {
+                    try {
+                        let [success, contents] = source.load_contents_finish(result);
+                        if (success) {
+                            let bytes = parseInt(imports.byteArray.toString(contents).trim());
+                            callback({
+                                vendor: "intel", bytes: bytes
+                            });
+                        } else {
+                            callback ({
+                                vendor: "intel", bytes: null
+                            });
+                        }
+                    } catch (e) {
+                        global.logError("Error al leer VRAM (intel):" + e.message);
+                        callback({
+                            vendor: "intel", bytes: null
+                        });
+                    }
+                });
+            } else {
+                callback({
+                    vendor: "intel", bytes: null
+                });
+            }
         } else {
             callback ({
                 vendor: this.gpuVendor, bytes: null
-            })
+            });
         }
     },
     _update_loop: function() {

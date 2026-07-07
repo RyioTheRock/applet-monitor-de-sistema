@@ -116,7 +116,7 @@
     },
     "applet-info": {
         "type": "label",
-        "description": "Este applet esta aun en formato beta 2.0-beta, la compatibilidad para mostrar el uso de GPU intel e Nvidia aun es inconcluso e incompleto si quiere ver el codigo fuente valla a mi github \n\nhttps://github.com/RyioTheRock/applet-monitor-de-sistema"
+        "description": "Este applet esta aun en formato beta 2.0-beta, la compatibilidad para mostrar el uso de GPU intel e Nvidia(no funcional con Nvidia) aun es inconcluso e incompleto si quiere ver el codigo fuente valla a mi github \n\nhttps://github.com/RyioTheRock/applet-monitor-de-sistema"
     },
     "show-cpu": {
         "type": "switch",
